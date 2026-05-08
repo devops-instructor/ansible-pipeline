@@ -11,5 +11,5 @@
     # yum search java
     - name: Install Java
       yum:
-        name: java-17-amazon-corretto
+        name: java-21-amazon-corretto
         state: latest
