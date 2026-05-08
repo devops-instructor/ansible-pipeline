@@ -1,3 +1,5 @@
+
+[groupA]
 server1 ansible_host=34.212.188.245
 server2 ansible_host=34.212.188.246
 server3 ansible_host=34.212.188.247
