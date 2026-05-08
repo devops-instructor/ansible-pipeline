@@ -15,6 +15,7 @@ pipeline {
                 sh 'ansible --version'
 
                 sh 'env | sort'
+                sh 'ansible-inventory --list'
 
                 sshagent(credentials: ['amazon-linux-private-key']) {
 
