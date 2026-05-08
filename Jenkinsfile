@@ -5,11 +5,16 @@ pipeline {
             args '-u root:root'
         }
     }
+    environment {
+        ANSIBLE_HOST_KEY_CHECKING = 'False'
+    }
     stages {
         stage('ansible') {
             steps {
                 sh 'whoami'
                 sh 'ansible --version'
+
+                sh 'env | sort'
 
                 sshagent(credentials: ['amazon-linux-private-key']) {
 
