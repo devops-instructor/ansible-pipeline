@@ -2,10 +2,11 @@ pipeline {
     agent {
         docker {
             image 'alpine/ansible:2.21.0'
+            args '-u root:root'
         }
     }
     environment {
-        HOME = "${WORKSPACE}"
+        // HOME = "${WORKSPACE}"
     }
     stages {
         stage('ansible') {
