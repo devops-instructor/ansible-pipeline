@@ -16,9 +16,13 @@ pipeline {
 
                 sshagent(credentials: ['amazon-linux-private-key']) {
 
+                    // sh 'ansible server1 -i hosts -m ping -u ec2-user'
+
                     // sh 'ansible server1:server2:server3 -i hosts -m ping -u ec2-user'
 
-                    sh 'ansible groupA:groupB -i hosts -m ping -u ec2-user'
+                    // sh 'ansible groupA:groupB -i hosts -m ping -u ec2-user'
+
+                    sh 'ansible all -i hosts -m ping -u ec2-user'
 
                 }
             }
