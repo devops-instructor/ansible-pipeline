@@ -7,6 +7,7 @@ pipeline {
     }
     environment {
         HOME = "${WORKSPACE}"
+        ANSIBLE_HOST_KEY_CHECKING = 'False'
     }
     stages {
         stage('ansible') {
