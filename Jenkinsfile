@@ -12,7 +12,11 @@ pipeline {
             steps {
                 sh 'ansible --version'
 
-                sh 'ansible server1 -i hosts -m ping -u ec2-user'
+                sshagent(credentials: ['amazon-linux-private-key']) {
+
+                    sh 'ansible server1 -i hosts -m ping -u ec2-user'
+
+                }
             }
         }
     }
