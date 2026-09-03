@@ -11,8 +11,6 @@ pipeline {
         stage('ansible') {
             steps {
                 sh 'ansible --version'
-                sh 'whoami'
-
 
                 sh 'ansible server1 -i hosts -m ping -u ec2-user'
             }
