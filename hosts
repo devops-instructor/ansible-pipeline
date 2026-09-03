@@ -2,3 +2,7 @@
 server1 ansible_host=44.247.216.157
 server2 ansible_host=44.247.216.158
 server3 ansible_host=44.247.216.159
+
+[groupB]
+server4 ansible_host=34.212.188.248
+server5 ansible_host=34.212.188.249
