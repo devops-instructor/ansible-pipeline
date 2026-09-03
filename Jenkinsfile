@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('ansible') {
             steps {
-                sh 'whoami'
+                // sh 'whoami'
                 sh 'ansible --version'
             }
         }
