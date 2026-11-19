@@ -8,7 +8,7 @@ pipeline {
     environment {
         DEV = 'true'
         // HOME = "${WORKSPACE}"
-        // ANSIBLE_HOST_KEY_CHECKING = 'False'
+        ANSIBLE_HOST_KEY_CHECKING = 'False'
         // JBOSS_CREDENTIALS = credentials('jboss-credentials')
     }
     stages {
