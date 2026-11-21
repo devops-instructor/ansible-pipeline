@@ -39,10 +39,10 @@ pipeline {
                     // sh 'ansible server1 -i hosts -m yum -a "name=tree state=latest"'
 
                     // sudo yum remove tree -y
-                    sh 'ansible server1 -i hosts -m yum -a "name=tree state=absent"'
+                    // sh 'ansible server1 -i hosts -m yum -a "name=tree state=absent"'
 
                     // sudo yum install nmap -y
-                    // sh 'ansible server1 -i hosts -m ansible.builtin.yum -a "name=nmap state=latest" -u ec2-user --become'
+                    sh 'ansible server1 -i hosts -m ansible.builtin.yum -a "name=nmap state=latest"'
 
                     // sh 'ansible-inventory -i hosts --graph'
 
