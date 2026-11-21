@@ -44,9 +44,9 @@ pipeline {
                     // sudo yum install nmap -y
                     // sh 'ansible server1 -i hosts -m ansible.builtin.yum -a "name=nmap state=latest"'
 
-                    sh 'ansible-inventory -i hosts --graph'
+                    // sh 'ansible-inventory -i hosts --graph'
 
-                    // sh 'ansible-playbook -i hosts playbooks/server1_config.yml'
+                    sh 'ansible-playbook -i hosts playbooks/server1_config.yml'
 
                     // sh 'ansible-playbook -i hosts playbooks/server1_jboss.yml'
                 }
