@@ -36,7 +36,8 @@ pipeline {
 
                     // sudo yum install tree -y
                     // sh 'ansible server1 -i hosts -m yum -a "name=tree state=latest"'
-                    sh 'ansible server1 -i hosts -m yum -a "name=tree state=latest" --become'
+                    // sh 'ansible server1 -i hosts -m yum -a "name=tree state=latest" --become'
+                    sh 'ansible server1 -i hosts -m yum -a "name=tree state=latest"'
 
                     // sudo yum remove tree -y
                     // sh 'ansible server1 -i hosts -m yum -a "name=tree state=absent" -u ec2-user --become'
