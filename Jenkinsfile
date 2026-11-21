@@ -9,7 +9,7 @@ pipeline {
         DEV = 'true'
         // HOME = "${WORKSPACE}"
         ANSIBLE_HOST_KEY_CHECKING = 'False'
-        // JBOSS_CREDENTIALS = credentials('jboss-credentials')
+        JBOSS_CREDENTIALS = credentials('jboss-credentials')
     }
     stages {
         stage('ansible') {
