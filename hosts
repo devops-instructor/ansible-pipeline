@@ -1,4 +1,4 @@
-
+server6 ansible_host=34.212.188.249
 
 [groupA]
 server1 ansible_host=35.93.211.27 ansible_user=ec2-user ansible_become=true
@@ -8,5 +8,3 @@ server3 ansible_host=44.247.216.159
 [groupB]
 server4 ansible_host=34.212.188.248
 server5 ansible_host=34.212.188.249
-
-server6 ansible_host=34.212.188.249
